@@ -4,149 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ives (Hongqing) Xue</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background-color: #f7f9fc;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 900px;
             margin: 40px auto;
-            max-width: 800px;
-            line-height: 1.6;
-            color: #333;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 10px;
         }
-        h1, h2 {
+
+        h1 {
             text-align: center;
+            margin-bottom: 5px;
         }
+
+        h2 {
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
         img {
             display: block;
             margin: 20px auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: auto; /* FIX: keep original ratio */
+            border-radius: 8px; /* cleaner than circle for academic style */
         }
-        .section {
-            margin-top: 40px;
+
+        p {
+            line-height: 1.7;
         }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
         ul {
             padding-left: 20px;
         }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 10px 18px;
+            border: 1px solid #1a73e8;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .cv-button:hover {
+            background-color: #1a73e8;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
 
+<div class="container">
+
     <h1>Ives (Hongqing) Xue</h1>
+    <div class="subtitle">
+        Statistics & Economics @ Wake Forest University
+    </div>
+
     <img src="ives.jpg" alt="profile photo">
 
-    <div class="section">
-        <p>
-            Hello! I’m Ives (Hongqing) Xue, a senior at Wake Forest University pursuing a 
-            <b>B.S. in Statistics and Economics with a minor in Mathematics</b>.
-        </p>
+    <p>
+        Hello! I am Ives (Hongqing) Xue, a senior at Wake Forest University pursuing a 
+        <span class="highlight">B.S. in Statistics and Economics with a minor in Mathematics</span>.
+    </p>
 
-        <p>
-            My academic training focuses on <b>statistical theory, machine learning, and economic analysis</b>, 
-            with strong foundations in real analysis, measure theory, and statistical inference.
-        </p>
+    <p>
+        My primary research interest lies in <span class="highlight">statistical learning</span>, 
+        with a focus on building robust and generalizable models under complex data environments. 
+        I am broadly interested in <span class="highlight">causal inference, biostatistics, and environmental economics</span>, 
+        particularly in applications to public health and policy.
+    </p>
 
-        <p>
-            I am particularly interested in:
-            <b>causal inference, biostatistics, environmental economics, and data-driven public health research.</b>
-        </p>
+    <p>
+        My recent work explores <span class="highlight">distribution shift, heterogeneous treatment effects, 
+        and environmental exposure modeling</span>, combining theoretical rigor with applied data analysis.
+    </p>
+
+
+    <h2>Research Experience</h2>
+    <ul>
+        <li>
+            <b>Generalizable Classification under Label Shift</b><br>
+            Developed and evaluated methods (BBSE, MLLS) for classification under distribution shift. 
+            Built pipelines for selecting shift-stable features and robust predictive models.
+        </li>
+
+        <li>
+            <b>Downwind Effects of Highways and Power Plants on EMS (NYC)</b><br>
+            Constructed wind-based exposure indices and designed models to study environmental impacts 
+            on emergency medical service demand and environmental justice outcomes.
+        </li>
+
+        <li>
+            <b>Dirty Wind and EMS Demand (Causal Forest Analysis)</b><br>
+            Built large-scale panel datasets and applied causal forests to estimate heterogeneous treatment effects 
+            across neighborhoods and time.
+        </li>
+
+        <li>
+            <b>Mathematical Model for Syphilis with Reinfection</b><br>
+            Developed an ODE-based epidemiological model incorporating reinfection, treatment, and immunity dynamics.
+        </li>
+
+        <li>
+            <b>Collider Bias Simulation Study</b><br>
+            Conducted simulation studies to analyze collider bias and evaluate mitigation strategies in causal inference.
+        </li>
+    </ul>
+
+
+    <h2>Professional Experience</h2>
+    <ul>
+        <li>
+            <b>Research Assistant – Department of Economics</b><br>
+            Built automated data pipelines in R and Python; constructed large-scale datasets integrating environmental, 
+            economic, and mobility data.
+        </li>
+
+        <li>
+            <b>Tutor – Math and Statistics Center</b><br>
+            Provided academic support in statistics and mathematics coursework.
+        </li>
+    </ul>
+
+
+    <h2>Leadership & Activities</h2>
+    <ul>
+        <li><b>President</b>, Chinese Student and Scholar Association (CSSA)</li>
+        <li><b>Operation Chair</b>, Wake Forest Chinese Ensemble</li>
+    </ul>
+
+
+    <h2>Skills</h2>
+    <p>
+        <b>Programming:</b> R, Python, Stata, Java, MATLAB<br>
+        <b>Tools:</b> LaTeX, Maple, Microsoft Office<br>
+        <b>Languages:</b> English, Chinese
+    </p>
+
+
+    <h2>Awards</h2>
+    <ul>
+        <li>Wake Forest Research Fellowship ($4000), 2025</li>
+        <li>DataFest Participant, 2024</li>
+        <li>Home Credit Challenge Bronze Prize (Kaggle), 2024</li>
+    </ul>
+
+
+    <h2>Curriculum Vitae</h2>
+    <div class="contact">
+        <a href="Xue Hongqing CV.pdf" download class="cv-button">Download CV</a>
     </div>
 
-    <div class="section">
-        <h2>Research Experience</h2>
-        <ul>
-            <li>
-                <b>Generalizable Classification under Label Shift</b><br>
-                Developed and benchmarked methods (BBSE, MLLS) for classification under distribution shift. 
-                Built pipelines for selecting stable features and robust models.
-            </li>
-            <br>
-            <li>
-                <b>Downwind Effects of Highways and Power Plants on EMS (NYC)</b><br>
-                Designed exposure indices using wind and geographic data; built models to study environmental 
-                justice and EMS demand.
-            </li>
-            <br>
-            <li>
-                <b>Dirty Wind and EMS Demand (Causal Forest Analysis)</b><br>
-                Constructed panel datasets and applied causal forests to estimate heterogeneous treatment effects 
-                across neighborhoods.
-            </li>
-            <br>
-            <li>
-                <b>Mathematical Model for Syphilis with Reinfection</b><br>
-                Built and simulated ODE-based epidemiological models incorporating reinfection and treatment dynamics.
-            </li>
-            <br>
-            <li>
-                <b>Collider Bias Simulation Study</b><br>
-                Conducted simulations to analyze bias in causal inference and proposed mitigation strategies.
-            </li>
-        </ul>
+
+    <h2>Contact</h2>
+    <div class="contact">
+        Email: xue22@wfu.edu
     </div>
 
-    <div class="section">
-        <h2>Professional Experience</h2>
-        <ul>
-            <li>
-                <b>Research Assistant – Department of Economics</b><br>
-                Automated data pipelines in R and Python, built large-scale datasets, and conducted data integration 
-                across multiple sources.
-            </li>
-            <br>
-            <li>
-                <b>Tutor – Math and Statistics Center</b><br>
-                Provided academic support in statistics and mathematics coursework.
-            </li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Leadership & Activities</h2>
-        <ul>
-            <li><b>President</b>, Chinese Student and Scholar Association (CSSA)</li>
-            <li><b>Operation Chair</b>, Wake Forest Chinese Ensemble</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Skills</h2>
-        <p>
-            <b>Programming:</b> R, Python, Stata, Java, MATLAB<br>
-            <b>Tools:</b> LaTeX, Maple, Microsoft Office<br>
-            <b>Languages:</b> English (fluent), Chinese (fluent)
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Awards</h2>
-        <ul>
-            <li>Wake Forest Research Fellowship ($4000), 2025</li>
-            <li>DataFest Participant, 2024</li>
-            <li>Home Credit Challenge Bronze Prize (Kaggle), 2024</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>CV</h2>
-        <p>
-            <a href="Xue Hongqing CV.pdf" download>Download my full CV</a>
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Contact</h2>
-        <p>
-            Email: xue22@wfu.edu
-        </p>
-    </div>
+</div>
 
 </body>
 </html>
